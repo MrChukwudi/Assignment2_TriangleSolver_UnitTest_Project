@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TriangleSolverUnitTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e3fd4c84b8fe4dcd2b6ac005f3587d30f4a6543")]
 [assembly: System.Reflection.AssemblyProductAttribute("TriangleSolverUnitTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TriangleSolverUnitTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

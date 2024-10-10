@@ -43,6 +43,27 @@ namespace TriangleSolverUnitTest
             return Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
         }
 
+
+        // 4. Zero side length tests
+        [Test]
+        [TestCase(0, 5, 6, ExpectedResult = "INVALID triangle - a zero was entered")]
+        [TestCase(5, 0, 6, ExpectedResult = "INVALID triangle - a zero was entered")]
+        [TestCase(5, 6, 0, ExpectedResult = "INVALID triangle - a zero was entered")]
+        public string AnalyzeTriangle_ZeroSideLength_Test(int firstSide, int secondSide, int thirdSide)
+        {
+            return Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+        }
+
+        // 5. Invalid triangle tests (not forming a triangle, but no zero side)
+        [Test]
+        [TestCase(2, 2, 5, ExpectedResult = "A triangle is not formed based on the input values")]
+        [TestCase(10, 3, 5, ExpectedResult = "A triangle is not formed based on the input values")]
+        [TestCase(1, 5, 10, ExpectedResult = "A triangle is not formed based on the input values")]
+        public string AnalyzeTriangle_InvalidTriangle_Test(int firstSide, int secondSide, int thirdSide)
+        {
+            return Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+        }
+
     }
     
 
